@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: rgb(255, 237, 227);
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+button{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 88, 116);
+    border: none;
+}
+.Jessica a{
+    color:white;
+    font-size: 30px;
+}
+main h1{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}

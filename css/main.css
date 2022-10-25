@@ -1,0 +1,165 @@
+/*1) learn how to change the color of the slider*/
+/*2) learn how to locate images*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: rgb(255, 237, 227);
+
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.biography{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.image button{
+    background-color: rgb(255, 88, 116);
+    border: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 90px;
+}
+.text{
+    background-color: white;
+    border-radius: 10px;
+    line-height: 2;
+    text-align: center;
+    width: 300px;
+}
+.text h1{
+    color: rgb(124, 112, 95);
+}
+.text h5{
+    color: rgb(203, 76, 44);
+}
+.text p{
+    padding: 15px 15px;
+}
+/*.additional{
+}*/
+.quotes{
+    background-color: white;
+    width: 250px;
+    height: 410px;
+    border-radius: 10px;
+    line-height: 2;
+    text-align: center;
+    padding: 15px 15px;
+}
+.quotes .left{
+    color: rgb(203, 76, 44);
+    text-align: left;
+}
+.quotes .right{
+    color: rgb(203, 76, 44);
+    text-align: right;
+}
+.dem_dev{
+    background-color: white;
+    margin-top: 100px;
+    width: 220px;
+    height: 200px;
+    border-radius: 10px;
+    line-height: 2;
+    padding: 15px 15px;
+}
+.dem_dev h3{
+    color: rgb(203, 76, 44);
+}
+.dem_dev h4{
+    color: rgb(124, 112, 95); 
+}
+/*.choices{
+}*/
+.traits{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-align: center;
+    line-height: 2;
+}
+.traits h3{
+    color: rgb(203, 76, 44); 
+}
+.traits ul li{
+    color: rgb(124, 112, 95); 
+}
+
+/*.slider::-webkit-slider-thumb {
+    background-color: brown;
+}
+.slider::-moz-range-thumb {
+    background: brown;
+}*/
+.options{
+    margin-top: 100px;
+    background-color: white;
+    width: 210px;
+    height: 160px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2;
+    padding: 20px 15px;
+}
+.y_p button{
+    background-color: rgb(255, 88, 116);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 70px;
+    height: 20px;
+}
+.r_s button{
+    background-color: rgb(255, 88, 116);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 85px;
+    height: 20px;   
+}
+.p_s button{
+    background-color: rgb(255, 88, 116);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 70px;
+    height: 20px;   
+}
+.o_e button{
+    background-color: rgb(255, 88, 116);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 70px;
+    height: 20px;   
+}
+.needs{
+    background-color: white;
+    width: 170px;
+    height: 180px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2;
+    box-shadow: 10px 10px rgb(255, 181, 107);
+}
+.needs h3{
+    color: rgb(203, 76, 44);  
+    text-align: left;
+}
