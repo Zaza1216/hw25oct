@@ -1,101 +1,155 @@
 /*1) learn how to change the color of the slider*/
 /*2) learn how to locate images*/
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 body {
-    background-color: rgb(255, 237, 227);
-
+  background-color: rgb(255, 237, 227);
 }
+/*dark-mode starts*/
+.dark-mode {
+  background-color: rgb(255, 132, 255);
+}
+.dark-mode .circle {
+  background-color: purple;
+}
+.dark-mode .text h5 {
+  color: purple;
+}
+.dark-mode .quotes .left {
+  color: purple;
+}
+.dark-mode .quotes .right {
+  color: purple;
+}
+.dark-mode .dem_dev h3 {
+  color: purple;
+}
+.dark-mode .traits h3 {
+  color: purple;
+}
+.dark-mode .y_p button {
+  background-color: purple;
+}
+.dark-mode .r_s button {
+  background-color: purple;
+}
+.dark-mode .p_s button {
+  background-color: purple;
+}
+.dark-mode .o_e button {
+  background-color: purple;
+}
+.dark-mode .needs {
+  box-shadow: 10px 10px purple;
+}
+.dark-mode .needs h3 {
+  color: purple;
+}
+/*dark-mode ends*/
 main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.biography {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.circle {
+  position: absolute;
+  top: -20%;
+  left: 30%;
+  background-color: rgb(255, 88, 116);
+  border: none;
+  width: 120px;
+  height: 120px;
+  /*new*/
+  display: flex;
+  z-index: 16;
+  /*new*/
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
 
+.text {
+  background-color: white;
+  border-radius: 10px;
+  line-height: 2;
+  position: relative;
+  /*new*/
+  z-index: 15;
+  /*new*/
+  padding-top: 50px;
+  text-align: center;
+  width: 300px;
 }
-.biography{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.text h1 {
+  color: rgb(124, 112, 95);
 }
-.image button{
-    background-color: rgb(255, 88, 116);
-    border: none;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-left: 90px;
+.text h5 {
+  color: rgb(203, 76, 44);
 }
-.text{
-    background-color: white;
-    border-radius: 10px;
-    line-height: 2;
-    text-align: center;
-    width: 300px;
-}
-.text h1{
-    color: rgb(124, 112, 95);
-}
-.text h5{
-    color: rgb(203, 76, 44);
-}
-.text p{
-    padding: 15px 15px;
+.text p {
+  padding: 15px 15px;
 }
 /*.additional{
 }*/
-.quotes{
-    background-color: white;
-    width: 250px;
-    height: 410px;
-    border-radius: 10px;
-    line-height: 2;
-    text-align: center;
-    padding: 15px 15px;
+.quotes {
+  background-color: white;
+  width: 250px;
+  height: 410px;
+  border-radius: 10px;
+  line-height: 2;
+  text-align: center;
+  padding: 15px 15px;
 }
-.quotes .left{
-    color: rgb(203, 76, 44);
-    text-align: left;
+.quotes .left {
+  color: rgb(203, 76, 44);
+  text-align: left;
 }
-.quotes .right{
-    color: rgb(203, 76, 44);
-    text-align: right;
+.quotes .right {
+  color: rgb(203, 76, 44);
+  text-align: right;
 }
-.dem_dev{
-    background-color: white;
-    margin-top: 100px;
-    width: 220px;
-    height: 200px;
-    border-radius: 10px;
-    line-height: 2;
-    padding: 15px 15px;
+.dem_dev {
+  background-color: white;
+  margin-top: 100px;
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  line-height: 2;
+  padding: 15px 15px;
 }
-.dem_dev h3{
-    color: rgb(203, 76, 44);
+.dem_dev h3 {
+  color: rgb(203, 76, 44);
 }
-.dem_dev h4{
-    color: rgb(124, 112, 95); 
+.dem_dev h4 {
+  color: rgb(124, 112, 95);
 }
 /*.choices{
 }*/
-.traits{
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px 15px;
-    text-align: center;
-    line-height: 2;
+.traits {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 15px;
+  text-align: center;
+  line-height: 2;
 }
-.traits h3{
-    color: rgb(203, 76, 44); 
+.traits h3 {
+  color: rgb(203, 76, 44);
 }
-.traits ul li{
-    color: rgb(124, 112, 95); 
+.traits ul li {
+  color: rgb(124, 112, 95);
 }
 
 /*.slider::-webkit-slider-thumb {
@@ -104,62 +158,121 @@ main {
 .slider::-moz-range-thumb {
     background: brown;
 }*/
-.options{
-    margin-top: 100px;
-    background-color: white;
-    width: 210px;
-    height: 160px;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 2;
-    padding: 20px 15px;
+.options {
+  margin-top: 100px;
+  background-color: white;
+  width: 210px;
+  height: 160px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 2;
+  padding: 20px 15px;
 }
-.y_p button{
-    background-color: rgb(255, 88, 116);
-    border: none;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    width: 70px;
-    height: 20px;
+.y_p button {
+  background-color: rgb(255, 88, 116);
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  width: 70px;
+  height: 20px;
 }
-.r_s button{
-    background-color: rgb(255, 88, 116);
-    border: none;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    width: 85px;
-    height: 20px;   
+.r_s button {
+  background-color: rgb(255, 88, 116);
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  width: 85px;
+  height: 20px;
 }
-.p_s button{
-    background-color: rgb(255, 88, 116);
-    border: none;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    width: 70px;
-    height: 20px;   
+.p_s button {
+  background-color: rgb(255, 88, 116);
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  width: 70px;
+  height: 20px;
 }
-.o_e button{
-    background-color: rgb(255, 88, 116);
-    border: none;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    width: 70px;
-    height: 20px;   
+.o_e button {
+  background-color: rgb(255, 88, 116);
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  width: 70px;
+  height: 20px;
 }
-.needs{
-    background-color: white;
-    width: 170px;
-    height: 180px;
-    border-radius: 10px;
-    text-align: center;
-    line-height: 2;
-    box-shadow: 10px 10px rgb(255, 181, 107);
+.needs {
+  background-color: white;
+  width: 170px;
+  height: 180px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 2;
+  box-shadow: 10px 10px rgb(255, 181, 107);
 }
-.needs h3{
-    color: rgb(203, 76, 44);  
-    text-align: left;
+.needs h3 {
+  color: rgb(203, 76, 44);
+  text-align: left;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: purple;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px purple;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

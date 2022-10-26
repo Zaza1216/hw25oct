@@ -14,9 +14,7 @@
 <body>
     <main>
         <div class="biography">
-            <div class="image">
-                <button>Jessica</button>
-            </div>
+            <div class="circle">Jessica</div>
             <div class="text">
                 <h1>Jessica</h1>
                 <h5>College Student</h5>
@@ -59,19 +57,19 @@
                     <li>Budget Concious</li>
                     <li>
                         <div class="slidecontainer">
-                            <input type="range" min="-" max="+" value="50" class="slider" id="b_c">
+                            <input type="range" min="-" max="+" value="50" class="sliderbc" id="b_c">
                         </div>
                     </li>
                     <li>Tech Saavy</li>
                     <li>
                         <div class="slidecontainer">
-                            <input type="range" min="-" max="+" value="50" class="slider" id="t_s">
+                            <input type="range" min="-" max="+" value="50" class="sliderts" id="t_s">
                         </div>
                     </li>
                     <li>Autodidact</li>
                     <li>
                         <div class="slidecontainer">
-                            <input type="range" min="-" max="+" value="50" class="slider" id="auto">
+                            <input type="range" min="-" max="+" value="50" class="sliderauto" id="auto">
                         </div>       
                     </li>
                 </ul>
@@ -101,6 +99,18 @@
             <h4>Holiday reminders</h4>
             <h4>Group activities</h4>
             <h4>Good internet</h4>
+        </div>
+        <div class="mode">
+            <label class="switch">
+                <input type="checkbox" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label>
+            <script>
+                function myFunction() {
+                   var element = document.body;
+                   element.classList.toggle("dark-mode");
+                }
+            </script>
         </div>
     </main>
 </body>
